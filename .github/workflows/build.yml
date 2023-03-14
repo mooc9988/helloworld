@@ -20,6 +20,7 @@ jobs:
             java:
               - 'src/**'
               - 'gradle/**'
+              - './*.gradle'
             sh:
               - 'scripts/**'
   java-build:
