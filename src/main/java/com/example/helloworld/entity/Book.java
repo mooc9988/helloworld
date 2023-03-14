@@ -3,6 +3,9 @@ package com.example.helloworld.entity;
 import java.time.LocalDateTime;
 import lombok.Data;
 
+/**
+ * A demo entity.
+ */
 @Data
 public class Book {
     private String name;
