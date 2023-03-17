@@ -36,6 +36,8 @@ jobs:
         run: sudo apt update && sudo apt install -y flatbuffers-compiler
       - name: Generate flatbuffers java classes
         run: mkdir -p src/generated/java; flatc --java -o 'src/generated/java' --gen-object-api components/protocol/fbs/model.fbs
+      - name: test files
+        run: ls -la src/generated/java
       - name: Set up JDK ${{ matrix.jdk }}
         uses: actions/setup-java@v3
         with:
