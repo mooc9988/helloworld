@@ -29,8 +29,11 @@ dependencies {
 
     implementation 'org.springframework.boot:spring-boot-starter-log4j2'
     implementation 'com.google.guava:guava:31.1-jre'
+    implementation group: 'com.google.flatbuffers', name: 'flatbuffers-java', version: '23.1.21'
 }
 
 tasks.named('test') {
     useJUnitPlatform()
 }
+
+sourceSets.main.java.srcDirs += 'src/generated/java'
